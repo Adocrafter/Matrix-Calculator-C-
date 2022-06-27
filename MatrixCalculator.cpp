@@ -83,7 +83,7 @@ string MatUString (vector<vector<double>> &mat)
 
 ostream& operator<<(ostream& os, Matrica &m)
 {
-    for (int i = 0; i<m.mat.size(); i++)
+    for (int i = 0; i<m.mat.size()/2; i++)
     {
         for (int j=0; j <m.mat[0].size(); j++)
         {
@@ -540,13 +540,15 @@ vector<vector<double>> StepenujMat (const vector<vector<double>> &mat, int a)
 }
 int main ()
 {
-    //vector<vector<double>> v {{4,2,3},{4,5,6},{7,8,9}};
-   // vector<vector<double>> v1 =  Kofaktor(v);
-    //Matrica m(v);
-    Matrica m2;
+  //  vector<vector<double>> v {{4,2,3},{4,5,6},{7,8,9}};
+    //vector<vector<double>> v1 =  Kofaktor(v);
+    Matrica m;
+    //Matrica m2;
+    cout<<"Enter the matrix which you want to calculate like this:"<<endl;
+    cout<<"[1 2; 3 4] + [3 4;2 1]^-1 + [3 6;3 9]^T"<<endl;
+    cin>>m;
+    cout<<m;
 
-    cin>>m2;
-    cout<<m2;
 
 
 
