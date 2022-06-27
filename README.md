@@ -25,7 +25,4 @@ Finally to do operations on matrices like addition, multiplication, division and
 ```sh
 [1 2; 3 4] + [3 4;2 1]^-1 * [3 6;3 9]^T
 ```
-To get an element with the smalles value you can use following function:
-```sh
-s.NajmanjiElement();
-```
+
